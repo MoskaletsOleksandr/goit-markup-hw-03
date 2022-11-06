@@ -40,16 +40,50 @@ body {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+}
 /* ---------HEADER---------- */
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header {
+  border-bottom: 1px solid #ececec;
+
   font-weight: 500;
   letter-spacing: 0.02em;
   font-size: 14px;
   line-height: 1.14;
-  /* Чи доречно тут виносити ці властивості, якщо вони однакові в обох списків, що є дітьми? */
 }
 .logo {
+  margin-right: 93px;
   font-family: 'Raleway', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: 700;
@@ -61,17 +95,26 @@ body {
 .logo-blue {
   color: var(--logo-color-span);
 }
+
+.navigation {
+  margin-right: auto;
+}
 .header-nav {
-  list-style: none;
+  display: flex;
+  gap: 50px;
 }
 .header-nav-link {
+  display: block;
+  padding: 32px 0;
+
   color: var(--nav-link-color);
 }
 .current-menu-item {
   color: var(--active-link-color);
 }
 .header-contacts {
-  list-style: none;
+  display: flex;
+  gap: 50px;
 }
 .header-contact-link {
   color: var(--contact-link-color);
@@ -122,18 +165,25 @@ body {
 /* ---------HERO---------- */
 
 .hero {
+  text-align: center;
+
   background: #2f303a;
   letter-spacing: 0.06em;
 }
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
 .hero-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+
   font-family: inherit;
   border: none;
   background: var(--main-btn-color);
@@ -141,8 +191,6 @@ body {
   font-size: 16px;
   line-height: 1.88;
   display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: inherit;
   color: var(--main-btn-text);
   cursor: pointer;
@@ -157,12 +205,16 @@ body {
 
 /* .benefits {
 } */
+
 .benefits-list {
-  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 /* .benefits-item {
 } */
 .benefits-title {
+  margin-bottom: 10px;
+
   font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
@@ -175,9 +227,12 @@ body {
 
 /* ---------EXAMPLES---------- */
 
-/* .examples {
-} */
+.examples {
+  padding-top: 0;
+}
 .examples-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -185,12 +240,16 @@ body {
   color: var(--title-text-color);
 }
 .examples-list {
-  list-style: none;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 30px;
 }
 /* .examples-item {
-}
-.examples-img {
+  width: calc((100% - 60px) / 3);
 } */
+.examples-img {
+  display: block;
+}
 
 /* ---------TEAM---------- */
 
@@ -198,6 +257,8 @@ body {
   background: var(--secondary-background-color);
 }
 .team-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -205,12 +266,18 @@ body {
   color: var(--title-text-color);
 }
 .team-list {
-  list-style: none;
+  display: flex;
+  gap: 30px;
+
   background: var(--primary-background-color);
 }
-/* .team-item {
-} */
+.team-item {
+  /* width: calc((100% - 90px) / 4); */
+  padding-bottom: 30px;
+}
 .team-item-title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -225,8 +292,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-/* .team-item-img {
-} */
+.team-item-img {
+  display: block;
+  margin-bottom: 30px;
+}
 
 /* ---------PORTFOLIO-MAIN---------- */
 /* ---------PORTFOLIO-MAIN---------- */
