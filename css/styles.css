@@ -56,9 +56,16 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  /* background-color: blue; */
 }
 .container {
   margin: 0 auto;
@@ -129,9 +136,15 @@ ul {
 /* ---------FOOTER---------- */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background: #2f303a;
 }
 .logo-foot {
+  display: block;
+  margin-bottom: 20px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -147,7 +160,9 @@ ul {
 .add-list {
   list-style: none;
 }
-/* .add-item {} */
+.add-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .add-item-map {
   color: #ffffff;
 }
@@ -183,6 +198,8 @@ ul {
   display: block;
   margin: 0 auto;
   padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
 
   font-family: inherit;
   border: none;
@@ -244,11 +261,10 @@ ul {
   /* flex-wrap: wrap; */
   gap: 30px;
 }
-/* .examples-item {
-  width: calc((100% - 60px) / 3);
-} */
+.examples-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
 .examples-img {
-  display: block;
 }
 
 /* ---------TEAM---------- */
@@ -269,11 +285,15 @@ ul {
   display: flex;
   gap: 30px;
 
-  background: var(--primary-background-color);
+  background: inherit;
 }
 .team-item {
   /* width: calc((100% - 90px) / 4); */
   padding-bottom: 30px;
+
+  border: none;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--primary-background-color);
 }
 .team-item-title {
   margin-bottom: 10px;
@@ -293,7 +313,6 @@ ul {
   color: var(--primary-text-color);
 }
 .team-item-img {
-  display: block;
   margin-bottom: 30px;
 }
 
