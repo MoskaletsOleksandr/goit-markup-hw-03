@@ -351,10 +351,16 @@ img {
   color: var(--secondary-btn-text);
 }
 .filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:focus,
+.current-filter-btn {
   background: var(--main-btn-color);
   color: var(--main-btn-text);
 }
+
+/* .current-filter-btn {
+  background-color: var(--main-btn-color);
+  color: var(--main-btn-text);
+} */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
