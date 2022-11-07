@@ -72,7 +72,14 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
+}
+
+.button {
+  display: block;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 /* ---------HEADER---------- */
 
@@ -195,14 +202,10 @@ img {
   color: #ffffff;
 }
 .hero-btn {
-  display: block;
   margin: 0 auto;
   padding: 10px 32px;
-  border: none;
-  border-radius: 4px;
 
   font-family: inherit;
-  border: none;
   background: var(--main-btn-color);
   font-weight: 700;
   font-size: 16px;
@@ -210,7 +213,6 @@ img {
   display: flex;
   letter-spacing: inherit;
   color: var(--main-btn-text);
-  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -325,11 +327,16 @@ img {
 /* .portfolio {
 } */
 .filter-btns {
-  list-style: none;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 .filter-btn {
+  min-width: 73px;
+  padding: 6px 22px;
+
   font-family: inherit;
-  border: none;
   background: var(--secondary-btn-color);
   font-weight: 500;
   font-size: 16px;
@@ -337,7 +344,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-btn-text);
-  cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -345,13 +351,25 @@ img {
   color: var(--main-btn-text);
 }
 .portfolio-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-/* .portfolio-item {
+.portfolio-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
-.portfolio-item-link {
+/* .portfolio-item-link {
 } */
+
+.title-text-wrap {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
 .portfolio-item-title {
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
