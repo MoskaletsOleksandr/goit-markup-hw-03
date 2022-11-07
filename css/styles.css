@@ -58,7 +58,7 @@ ul {
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -98,6 +98,8 @@ img {
 }
 .logo {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: 'Raleway', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: 700;
@@ -132,6 +134,8 @@ img {
   gap: 50px;
 }
 .header-contact-link {
+  padding: 32px 0;
+
   color: var(--contact-link-color);
 }
 .header-nav-link:hover,
